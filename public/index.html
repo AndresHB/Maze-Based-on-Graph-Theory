@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tiger's Maze</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/Estilos.css">
+		<script src="js/MySwitch.js"></script>
+		<script src="js/Algoritmo.js"></script>
+		<script src="js/Nodo.js"></script>
+		<script src="js/Matriz.js"></script>
+		<script src="js/View.js"></script>
+		<script src="js/Model.js"></script>
+		<script src="js/BaseDatos.js"></script>
+		<script src="js/Controller.js"></script>
+		<script src="bootstrap/js/jquery-3.1.0.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<section>
+			<div class="page-header">
+				<h1 class="text-center">Tiger's Maze</h1>
+				<div class="text-center">
+					<table class="table">
+						<tr>
+							<td><img src="img/Escudo.png" height="200" width="200" alt="Error"></td>
+							<td class="text-center">
+								<span>Instrucciones:</span><br>
+								<span>1)	Para generar un laberinto y comenzar una partida desde cero: Click en</span> <span style="color:red">Generar Laberinto</span><span>.</span><br>
+								<span>2)	Para buscar una partida previa en el historial:</span> <span style="color:red">Click en Cargar Partida</span><span>.</span><br>
+								<span>3)	Si sale de la pagina o le da Click al boton</span> <span style="color:red">Salvar Partida</span> <span>se guardara su progreso.</span><br>
+							</td>
+							<td><img src="img/Escudo.png" height="200" width="200" alt="Error"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="text-center"><canvas id="Panel"></canvas></div>
+			<hr>
+			<div class="container text-center">
+				<div class="col-xs-6">
+					<table class="table table-striped">
+						<th colspan="2">Para generar Laberintos</th>
+						<tr>
+							<td>Dimension</td>
+							<td><input class="form-control" id="Dimension" type="text" placeholder="2 - 40" value="5"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><button class="btn btn-warning" id="gen" onclick="controller.getGen()">Generar laberinto</button></td>
+						</tr>
+					</table>
+				</div>
+				<div class="col-xs-6">
+					<table class="table table-striped">
+						<th colspan="2">Persistencia</th>
+						<tr>
+							<td>Nombre de la Partida:</td>
+							<td><input class="form-control" id="name" type="text" placeholder="Nombre de partida" /></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button class="btn btn-warning" id="guardar" onclick="controller.postSave()">Guardar partida!</button>
+								<button class="btn btn-warning" id="cargar" onclick="controller.getLoad()">Cargar partida!</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<hr>
+		<div class="text-center">
+			<label class="checkbox-inline"><input id="isLocal" type="checkbox" value="">Local</label><br><br>
+			Velocidad (ms): <input class="input-sm" id="speed" type="text" placeholder="0 - 1000" value="250">
+			<input onclick="controller.autoControl()" class="btn btn-success" id="Solucion" type="button" value="Resolver Laberinto" disabled>
+			<a id="link" class="btn btn-warning" role="button" download="Laberinto.png">Guardar Imagen</a>
+		</div>
+		<div id='msg'>
+			<h3>Registro de actividad</h3>
+		</div>
+	</body>
+</html>

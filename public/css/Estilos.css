@@ -1,0 +1,24 @@
+.table-striped {
+	background: white;
+}
+
+#msg {
+	background: red;
+    background: -webkit-linear-gradient(#cc0000, red);
+    background: -o-linear-gradient(#cc0000, red);
+    background: -moz-linear-gradient(#cc0000, red);
+    background: linear-gradient(#cc0000, red);
+	color: white;
+}
+
+body {
+	background: #e6e6e6
+}
+
+.page-header {
+	background: yellow;
+    background: -webkit-linear-gradient(yellow, #ff9900);
+    background: -o-linear-gradient(yellow, #ff9900);
+    background: -moz-linear-gradient(yellow, #ff9900);
+    background: linear-gradient(yellow, #ff9900);
+}

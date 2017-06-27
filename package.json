@@ -1,0 +1,29 @@
+{
+  "name": "maze",
+  "version": "1.0.0",
+  "description": "Proyecto de Paradigmas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jose Rojas, Alejandro Vega, Andrés Hernández, Javier Zamora",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.8"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JOSEJ94/Paradigmas-Maze.git"
+  },
+  "keywords": [
+    "Maze"
+  ],
+  "bugs": {
+    "url": "https://github.com/JOSEJ94/Paradigmas-Maze/issues"
+  },
+  "homepage": "https://github.com/JOSEJ94/Paradigmas-Maze#readme"
+}

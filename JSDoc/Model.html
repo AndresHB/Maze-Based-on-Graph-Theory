@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: Model</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: Model</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>Model</h2>
+        
+            <div class="class-description">Clase modelo</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Model"><span class="type-signature"></span>new Model<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Constructor de Model
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Model.js.html">Model.js</a>, <a href="Model.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="loadModel"><span class="type-signature"></span>loadModel<span class="signature">(newMatriz)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Carga el laberinto en la logica del MVC
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>newMatriz</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Matriz.html">Matriz</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Laberinto el cual debe ser cargado.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Model.js.html">Model.js</a>, <a href="Model.js.html#line50">line 50</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="loadProcess"><span class="type-signature"></span>loadProcess<span class="signature">(raiz, node, i, j, n)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Ubica en donde se encuentra el nodo de la Matriz que ubica al jugador.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>raiz</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Nodo.html">Nodo</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Primer nodo que forma al laberinto.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>node</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Nodo.html">Nodo</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">nodo en el cual se trabajara el metodo</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>i</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Fila del laberinto .</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>j</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Columna del laberinto.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>n</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Dimensión del laberinto.
+returns {Nodo} Nodo en el que esta el jugador en el laberinto</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Model.js.html">Model.js</a>, <a href="Model.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setModel"><span class="type-signature"></span>setModel<span class="signature">(newMatriz)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Establece un laberinto como nuevo modelo.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>newMatriz</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Matriz.html">Matriz</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Laberinto el cual debe ser cargado.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Model.js.html">Model.js</a>, <a href="Model.js.html#line23">line 23</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Generador.html">Generador</a></li><li><a href="module-utilidades.html">utilidades</a></li></ul><h3>Classes</h3><ul><li><a href="Controller.html">Controller</a></li><li><a href="Matriz.html">Matriz</a></li><li><a href="Model.html">Model</a></li><li><a href="mySwitch.html">mySwitch</a></li><li><a href="Nodo.html">Nodo</a></li><li><a href="View.html">View</a></li></ul><h3>Global</h3><ul><li><a href="global.html#copyArray">copyArray</a></li><li><a href="global.html#copyNode">copyNode</a></li><li><a href="global.html#creaLaberinto">creaLaberinto</a></li><li><a href="global.html#express">express</a></li><li><a href="global.html#generaMatriz">generaMatriz</a></li><li><a href="global.html#JsonToMaze">JsonToMaze</a></li><li><a href="global.html#mazeToJson">mazeToJson</a></li><li><a href="global.html#myPop">myPop</a></li><li><a href="global.html#myPush">myPush</a></li><li><a href="global.html#replacer">replacer</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#revive">revive</a></li><li><a href="global.html#router">router</a></li><li><a href="global.html#SavedGame">SavedGame</a></li><li><a href="global.html#server">server</a></li><li><a href="global.html#serverPort">serverPort</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Sep 05 2016 00:56:26 GMT-0600 (Hora estándar, América Central)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
